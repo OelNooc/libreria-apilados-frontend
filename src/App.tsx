@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import AddBook from "./pages/Addbook";
+import AddBook from "./pages/AddBook";
 import ListBooks from "./pages/ListBooks";
 import SearchBooks from "./pages/SearchBooks";
 import BookDetail from "./components/BookDetail";
