@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AddBook from "./pages/Addbook";
@@ -16,6 +16,7 @@ function App() {
         <Route path="/list" element={<ListBooks />} />
         <Route path="/search" element={<SearchBooks />} />
         <Route path="/book/:isbn" element={<BookDetail />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
